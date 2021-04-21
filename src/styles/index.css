@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.imgUserList {
+  transition: 3s;
+  height: 76px;
+  width: 76px;
+  margin-right: 12px;
+}
+
+.imgUserListHistory {
+  transition: 3s;
+  height: 36px;
+  width: 36px;
+  margin-right: 12px;
+}
+
+.userCardList {
+  float: left;
+}
+
+.username {
+  display: flex;
+  color: #262626;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.teamData {
+  margin-top: 6px;
+}
+
+.App:hover > img {
+  transform: rotate(1080deg);
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+}
+
+.headerLogoContainer {
+  text-align: center;
+  position: relative;
+}
+
+.headerLogoImage {
+  height: 50px;
+  margin-right: 12px;
+}
+
+.headerLogoText {
+  position: absolute;
+  top: 17px;
+  font-size: 24px;
+}
+
+.cardLogo {
+  display: block;
+  margin-top: 18px;
+  float: left;
+}
+
+.cardLogoGithub {
+  width: 15px;
+  height: 12px;
+  float: left;
+  opacity: 0.4;
+  margin-right: 7px;
+}
+
+.userListFooterContainer {
+  margin-top: 20px;
+  border-top: 1px solid #f5f5f5;
+  margin-left: -19px;
+  margin-right: -19px;
+}
+
+.userListDetailContainer {
+  width: 100%;
+  display: inline-block;
+}
+
+.logoText {
+  font-size: 12px;
+  color: #999999;
+  display: inline-flex;
+  margin-left: 0px;
+}
+
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  width: 27%;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.profileGrid {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  width: 44%;
+  float: left;
+}
+
+.backContainer {
+  float: left;
+  margin-top: 16px;
+}
+
+.alignCenter {
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1130px) {
+  .gridItem {
+    width: 27%;
+  }
+}
+
+/* @media screen and (min-width: 1131px) {
+  .gridItem {
+    width: 40%;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .gridItem {
+    width: 41%;
+  }
+}
+
+.header {
+  padding: 20px;
+}
